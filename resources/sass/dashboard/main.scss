@@ -1,0 +1,165 @@
+@import './wrapper';
+
+body{
+    background: #F9FAFB;
+}
+main{
+    // margin: 50px 0 0;
+}
+.text-main-color{
+    color: #3e3939;
+     font-size: 20px;
+}
+.display-inline{
+    display: inline;
+}
+.overflow-hidden{
+    overflow: hidden;
+}
+.margin-0{
+    margin: 0;
+
+    & > .select-wrapper input{
+        margin: 0;
+    }
+}
+.margin-top-0{
+    margin-top: 0;
+}
+.margin-top-20{
+    margin-top: 20px;
+}
+.btn-with-select{
+    margin: 5px 0 0;
+}
+.padding-20{
+    padding: 20px;
+}
+.padding-0-20-20{
+    padding: 0 20px 20px;
+}
+.padding-left-20{
+    padding-left: 20px;
+}
+.padding-top-20{
+    padding-top: 20px;
+}
+.spinLoading{
+    animation-name: spin;
+    animation-duration: 1000ms;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+.modal-small{
+    width: 400px;
+}
+.modal-footer-styled{
+    padding: 0!important;
+    height: auto!important;
+}
+
+.input-field-with-button{
+    margin: 0;
+
+    input{
+        margin: 0!important;
+        height: 36px!important;
+    }
+    label{
+        transform: translateY(6px)!important;
+        &.active{
+            transform: translateY(-12px) scale(0.8)!important;
+        }
+    }
+}
+
+.alerts{
+    margin: 20px 0 0;
+
+    .alert{
+        position: relative;
+        padding: 1rem 1rem;
+        margin-bottom: 1rem;
+        border: 1px solid #e0e0e0;
+        border-radius: .25rem;
+    }
+}
+
+.button{
+    position: relative;
+    padding: 0 30px;
+    line-height: 50px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #f66056;
+    cursor: pointer;
+
+    &.small{
+        padding: 0 18px;
+        height: 34px;
+        line-height: 34px;
+        font-size: 16px;
+    }
+    &.dark{
+        background: #333366;
+    }
+    .material-icon{
+        position: absolute;
+        top: 0;
+        line-height: 34px;
+        font-size: 20px;
+    }
+    &.with-icon-left{
+        position: relative;
+        padding-left: 40px;
+
+        .material-icon{
+            left: 15px;
+        }
+    }
+}
+.buttons{
+    .button{
+        display: block;
+        float: left;
+        margin-right: 15px;
+
+        &:last-child{
+            margin-right: 0;
+        }
+    }
+}
+
+.newTitle{
+    margin: 0 0 20px;
+    font-size: 20px;
+    color: #8b898a;
+    font-weight: 300;
+}
+
+@keyframes spin {
+    from {
+        transform:rotate(0deg);
+    }
+    to {
+        transform:rotate(360deg);
+    }
+}
+
+.ellipsis {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.max-w-300 {
+    max-width: 300px;
+}
+.img-contain {
+    object-fit: contain;
+}
+.img-cover {
+    object-fit: cover;
+}

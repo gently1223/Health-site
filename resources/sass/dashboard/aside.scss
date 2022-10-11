@@ -1,0 +1,142 @@
+aside{
+    position: fixed;
+    top: 0;
+    left: -250px;
+    bottom: 0;
+    width: 250px;
+    background: #FDFAF9;
+    transition: transform .3s linear;
+    z-index: 3;
+
+    &.isOpen{
+        transform: translate3d(250px, 0, 0);
+    }
+    .logo{
+        padding: 0 26px;
+        line-height: 100px;
+
+        a{
+            color: #fff;
+            font-size: 38px;
+        }
+    }
+
+    ul.collapsible{
+        margin: 0;
+        border: 0;
+        box-shadow: none;
+
+        li{
+            &.currentRoute{
+                background: rgba(0,0,0,.25);
+            }
+            a{
+                display: block;
+                padding: 0 10px 0 26px;
+                height: 55px;
+                line-height: 55px;
+                background: none;
+                border: 0;
+                color: #fff;
+                text-transform: uppercase;
+                font-weight: 300;
+            }
+            .collapsible-body{
+                padding: 0;
+                border: 0;
+
+                .collapsible-body li a {
+                    padding-left: 40px;
+                }
+            }
+            .collapsible-header i {
+                margin: 0;
+                line-height:55px
+            }
+            &.active > .collapsible-header i {
+                -webkit-transform: rotate(90deg);
+                transform: rotate(90deg);
+                -webkit-transition: -webkit-transform .15s;
+                transition: -webkit-transform .15s;
+                transition: transform .15s;
+                transition: transform .15s,-webkit-transform .15s;
+            }
+        }
+    }
+    > ul.collapsible {
+        overflow-y: auto;
+        max-height: 100vh;
+        > li > a {
+            &.collapsible-header{
+                padding: 0 10px 0 22px;
+                font-weight: 500;
+                border: 0;
+                transition: none;
+            }
+            &.collapsible-header:focus {
+                background: rgba(220,220,220,.25)!important;
+            }
+        }
+    }
+
+    .hider{
+        position: absolute;
+        top: 50%;
+        right: -20px;
+        width: 20px;
+        height: 50px;
+        overflow: hidden;
+        margin-top: -25px;
+        z-index: -1;
+        cursor: pointer;
+
+        .is_right, .is_left{
+            position: absolute;
+            top: 0;
+            right: 0;
+            width: 50px;
+            height: 50px;
+            line-height: 50px;
+            text-align: center;
+            font-size: 30px;
+            background: #3D8AD4;
+            color: #fff;
+            border-radius: 50%;
+            padding-left: 23px;
+        }
+
+        .is_left{
+            padding-left: 22px;
+        }
+        &.isLeft{
+            .is_right{
+                display: none;
+            }
+        }
+
+        &.isRight{
+            .is_left{
+                display: none;
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        width: 8px;
+    }
+
+    /* Track */
+    ::-webkit-scrollbar-track {
+        background: #6e9eec;
+    }
+
+      /* Handle */
+    ::-webkit-scrollbar-thumb {
+        background: #4e7ecc;
+    }
+
+      /* Handle on hover */
+    ::-webkit-scrollbar-thumb:hover {
+        background: #3e6ebc;
+    }
+}

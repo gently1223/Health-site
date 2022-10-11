@@ -1,0 +1,40 @@
+@import './dashboard/variables';
+
+@import 'materialize-css';
+@import './dashboard/header';
+@import './dashboard/notifications';
+@import './dashboard/aside';
+@import './dashboard/amenities';
+@import './dashboard/main';
+@import './dashboard/footer';
+@import './dashboard/pages';
+@import './dashboard/member_dashboard';
+
+.pageLoading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background: rgba(255, 255, 255, .7);
+    z-index: 1000;
+
+    .preloader-wrapper{
+        top: 50%;
+        display: block;
+        margin: -32px auto 0;
+    }
+}
+#toast-container{
+    top: auto;
+    bottom: 96px;
+    right: 22px;
+}
+.card-line{
+    height: 1px;
+    display: block;
+    background: #ececec;
+    margin: 20px -14px 0;
+}

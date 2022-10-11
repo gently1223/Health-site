@@ -1,0 +1,16 @@
+#globalNotifications{
+    padding: 0;
+    margin: 0;
+
+    li{
+        background: #ff921f;
+        padding: 20px 30px;
+        color: #fff;
+        font-size: 18px;
+        border-bottom: 1px solid #e16619;
+
+        &:last-child{
+            border-bottom: 0;
+        }
+    }
+}

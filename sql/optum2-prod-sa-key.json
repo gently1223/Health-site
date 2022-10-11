@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "daily-burn-uapi-production",
+  "private_key_id": "4611a61d953cbe50609d24bb8fd806763318b074",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvgIBADANBgkqhkiG9w0BAQEFAASCBKgwggSkAgEAAoIBAQCha+LV7dXaVi3F\n6C/3AV+zdp8HP/lppErUSb4zCVXLlM6fULSHQuG2FoG7u8/6i0X7tPT9DFC34Krq\niTqnFTPSzvK9GaBF7uchTqwJlXRwkMx3aim+YJgPqeOJr9DcERp3JfjqjLUIz6HV\nlHfoERRDyG7q6AyIRLm2AdpBrER2zfb7OQPeE/R1DW+DicrzBF+DZFwMbSI6g3Bo\n/y6PeoPlw7Okz0RlEsMWSMIwCctolBmbylvRVJt7c5/1Wog/aHdnohO1vdcUuCdL\nLU+7xtnIPzna97vzMN9nuK9ONHMXvCeyWlkneLK+P6uNrxlcC7G1/j1hjFKlEKP9\n8U5zyoXfAgMBAAECggEADEure6AiKf9mfSyyep4gLAtdEbBNzz40dPcpBbowTtGG\n65u6JJNznesY9rPXo734FrQx9RR7EYaLflH1pcR3rhcVZlINY0ZPVLopYJGBzRE6\ngd4UT+wLqSXHrzU1M44Z9flufG87WvB1407r00F5ya/6wunqCncxrit19IqqrGHk\n1CsY337DVp18yU9Y5KZrSlGtb6vzxv358VEolqA1aHMAsmVdEIYIszUeh6ODIKWK\nWt3z2IzNSdqgvZpKSn+WqvEHhRoYDwpPq+pVFYWzDP6f79dJqBv8t4avP6zmUnRC\nmdTfn9ZdhAlxfwa3cr7NxBgrWwo03+EKlW0VU3TkAQKBgQDfA+ZW7EduYX/bhKaW\nenAgtsYuhzcJS6YcUCtf0RBJHnqYJeQBRXENLowdv0bvV0mShGnldVlL0UUh+vO9\n5b9tPOTqiuqNDxdAEs4gm6Gfn8ks6t74koqYU4n4YzrScu+4yUWpGnn06uYoSrH5\na586xk370P+RP0Z5XyKVlLl6rQKBgQC5S9buCtfdmG8LcSMXjE6BORTBJLrX9ijE\niyE/k0wS8yl1ea9kdnJ35JEQ6hekDzShU6sx7FvVESkGlOmq7NiR1QLHNjrRwjmV\nq40U4Gm16tY1OMB7NA1qLkOzT0ZyumjkV3d8HesvV+p1svpUyYn6Edh9TCl6UPk4\nPMX3M+BAOwKBgQCk7KthSOcieDQn0RepXO6jIse5DQHke+9iLN+GwoM6r7GV5x+Q\n2Rvb1bqFHTmGMpUUJ5xwtrHM4fwwPvgWTVudm1TnJsiCfNCC7+VENBP4iiAqeZ9f\nUG/yaoU0DZ4omBs0GpTLk+rw9u4yidrIS5C71H9DZLI7ZgHmLDbVS+FHGQKBgQCD\n5KjLbepzsEIymciJxXRH5RKR3IwmlvAz3ni/ISDASFdVaFVhJDKchpR/vrEvNSeY\nQc8UzRIc2ociSTL+WHJbc4zzsfUyQ5bro13b41U7iToKTigsSkPWNbI42w/hMDDj\ngCLrtPwoCeM4/jnTylUtLDC2F1Va3HJZBmE/cayI6wKBgEYylhkZ6J0e2Tql9Rz5\ndRrd712Rgy+6gA7YVgpt7tYv9MoiaWA6qyB7U53A2PahrvuEWHrOJcgpJW8PnpGM\n/xx+q5HivcZUuwgnPEqne8lDTQg1tWrJGMnzNWQ/YgLemfj84+vULJxrEICnbCGs\nH/8c5vFZ/so/z/V1rvsv2EbX\n-----END PRIVATE KEY-----\n",
+  "client_email": "optum2@daily-burn-uapi-production.iam.gserviceaccount.com",
+  "client_id": "114427313164978479699",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/optum2%40daily-burn-uapi-production.iam.gserviceaccount.com"
+}

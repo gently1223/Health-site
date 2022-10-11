@@ -1,0 +1,223 @@
+.hiddenOnMobile{
+    display: block;
+}
+.hiddenOnLarge{
+    display: none;
+}
+.billingAccountHeader{
+    padding: 34px 0;
+    height: 102px;
+
+    .stylizedSelect{
+        margin-right: 22px;
+    }
+}
+
+.billingAccountInfo{
+    margin-bottom: 20px;
+    overflow: hidden;
+
+    .billingAccountInfoLeft{
+        display: block;
+        float: left;
+        padding: 18px 25px;
+        width: 450px;
+        border-radius: 14px;
+        background: #1773cc;
+
+        & > span{
+            display: block;
+            margin-bottom: 10px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #336;
+        }
+        .totalBlock, .infoBlock{
+            span{
+                margin-bottom: 2px;
+                font-size: 12px;
+                display: block;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+            i{
+                font-style: normal;
+                color: #ffffff;
+                line-height: 26px;
+                font-weight: bold;
+            }
+        }
+        .totalBlock{
+            float: left;
+
+            i{
+                font-size: 24px;
+                line-height: 26px;
+            }
+        }
+        .infoBlock{
+            float: right;
+            width: 22%;
+        }
+    }
+    .billingAccountInfoLeftDash{
+        float: left;
+        width: 650px;
+
+        & > span{
+            display: block;
+            height: 40px;
+            line-height: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #434044;
+        }
+        .billingAccountInfoRightGraph{
+            float: left;
+            width: 230px;
+
+
+            .pieGraph{
+                float: right;
+                width: 110px;
+                height: 110px;
+            }
+        }
+        .billingAccountInfoRightBlocks{
+            float: right;
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+
+            .billingAccountInfoRightBlock{
+                display: block;
+            }
+        }
+        .billingAccountInfoRightGraph, .billingAccountInfoRightBlocks{
+            padding-top: 10px;
+
+            .billingAccountInfoRightBlock{
+                position: relative;
+
+                .legend{
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    width: 18px;
+                    height: 2px;
+                }
+            }
+            span{
+                margin-bottom: 2px;
+                line-height: 16px;
+
+                font-size: 12px;
+                display: block;
+                color: #787b89;
+                text-transform: uppercase;
+            }
+            b{
+                display: block;
+                font-size: 16px;
+                color: #484548;
+            }
+            i{
+                display: block;
+                font-style: normal;
+                font-size: 14px;
+                color: #484548;
+            }
+        }
+    }
+
+    .billingAccountInfoRight{
+        float: right;
+        padding: 0px 25px;
+        border-radius: 14px;
+        background: #1773cc;
+
+
+        & > span{
+            display: block;
+            height: 40px;
+            line-height: 50px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #336;
+        }
+        .billingAccountInfoRightGraph{
+            float: left;
+            width: 230px;
+
+
+            .pieGraph{
+                float: right;
+                width: 110px;
+                height: 110px;
+            }
+        }
+        .billingAccountInfoRightBlocks{
+            float: right;
+            display: flex;
+            justify-content: space-between;
+            width: 400px;
+
+            .billingAccountInfoRightBlock{
+                display: block;
+            }
+        }
+        .billingAccountInfoRightGraph, .billingAccountInfoRightBlocks{
+            padding-top: 10px;
+
+            .billingAccountInfoRightBlock{
+                position: relative;
+
+                .legend{
+                    position: absolute;
+                    top: -16px;
+                    left: 0;
+                    width: 18px;
+                    height: 2px;
+                }
+            }
+            span{
+                margin-bottom: 2px;
+                line-height: 16px;
+
+                font-size: 12px;
+                display: block;
+                color: #ffffff;
+                text-transform: uppercase;
+            }
+            b{
+                display: block;
+                font-size: 16px;
+                color: #ffffff;
+            }
+            i{
+                display: block;
+                font-style: normal;
+                font-size: 14px;
+                color: #ffffff;
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .hiddenOnMobile{
+        display: none;
+    }
+    .hiddenOnLarge{
+        display: block;
+    }
+    .billingAccountInfo{
+        .billingAccountInfoLeft{
+            width: 100%;
+        }
+        .billingAccountInfoRight {
+            width: 100%;
+            margin: 30px 0 0;
+        }
+    }
+}

@@ -1,0 +1,489 @@
+@import 'materialize-css';
+
+.cursor-pointer{
+    cursor: pointer;
+}
+nav{
+    z-index: 1000;
+}
+
+.logo {
+       margin-left: 40px;
+       margin-top: 10px;
+    }
+
+.pageLoading{
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    overflow: hidden;
+    background: #fff;
+    z-index: 1000;
+
+    .preloader-wrapper{
+        top: 50%;
+        display: block;
+        margin: -32px auto 0;
+    }
+}
+.authPage{
+    position: relative;
+    min-height: 100vh;
+
+    .authPageBackgroundImage{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        z-index: 0;
+        background-size: cover;
+    }
+
+    .authPageWrapper{
+        position: relative;
+        margin: 0 auto;
+        width: 1480px;
+        height: 100vh;
+    }
+
+    &.authPage-restyling{
+        background: #d9d9d5;
+
+        .authPageBackground{
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: radial-gradient(circle at 50% 30%, transparent, transparent, rgba(0, 0, 0, .12));
+            z-index: 0;
+        }
+        .authPageForm{
+            position: relative;
+            margin: 0 0 0 60px;
+            padding: 30px 30px 110px;
+            width: 575px;
+            background: #fff;
+
+            .greetings{
+                position: relative;
+                border-bottom: 1px solid #cfcfcf;
+                padding: 0 0 16px;
+
+                h1{
+                    margin: 0;
+                    padding: 2px 0 0;
+                    font-size: 30px;
+                    color: #414141;
+
+                    span{
+                        display: block;
+                        font-size: 34px;
+                        line-height: 44px;
+                    }
+                }
+                .avatar{
+                    position: absolute;
+                    top: 0;
+                    right: 0;
+                    margin: 0;
+                    width: 80px;
+                    height: 80px;
+                    border-radius: 50%;
+                }
+            }
+            .error{
+                position: relative;
+                height: 0;
+
+                span{
+                    display: block;
+                    padding: 12px 0 0;
+                    color: #fd6658;
+                }
+            }
+            .button{
+                margin: 50px 0 0;
+            }
+            .authFormFooter{
+                margin: 40px 0 0;
+                padding: 16px 0 0;
+                border-top: 1px solid #cfcfcf;
+
+                h2{
+                    margin: 0 0 2px;
+                    font-size: 16px;
+                    color: #9e9e9e;
+                }
+                a{
+                    color: #027d8c;
+                    font-weight: bold;
+                    letter-spacing: 1px;
+                    text-transform: uppercase;
+                    font-size: 14px;
+                }
+            }
+            .authDownload{
+                position: absolute;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                height: 80px;
+                background: #000;
+
+                .appStore, .googlePlay{
+                    display: block;
+                    float: left;
+                    margin: 15px;
+                    width: 200px;
+                    height: 50px;
+                    background-position: center;
+                    background-repeat: no-repeat;
+                    background-size: cover;
+                }
+                span{
+                    display: block;
+                    float: left;
+                    margin: 0 7px;
+                    padding: 5px;
+
+                    img{
+                        width: 70px;
+                        float: left;
+                    }
+                }
+                .appStore{
+                    background-image: url('/images/app_store.jpg');
+                }
+                .googlePlay{
+                    background-image: url('/images/google_play.jpg');
+                }
+            }
+        }
+    }
+
+    .authPageLeft{
+        position: absolute;
+        top: 0;
+        left: 0;
+        bottom: 0;
+        background-color: white;
+        width: 58.5vw;
+        background-image: url('/images/login_background_new.jpg');
+        background-repeat: no-repeat;
+        background-size: contain;
+        background-position: center;
+    }
+    .authPageRight{
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 41.5vw;
+        background: #fff;
+        height: 100vh;
+        overflow-x: hidden;
+        overflow-y: auto;
+    }
+
+    .avatar{
+        width: 100px;
+        height: 100px;
+        margin: 25px auto 15px;
+        border-radius: 50%;
+        background-position: center;
+        background-size: cover;
+    }
+    .btn-flat{
+        &:hover{
+            background: none;
+        }
+    }
+    .full-height {
+        width: 100%;
+        height: 100vh;
+        float: right;
+    }
+    .auth-panel{
+        margin: 0 auto;
+        width: 80%;
+    }
+    .margin-0{
+        margin: 0;
+    }
+    .margin-top-0{
+        margin-top: 0;
+    }
+    .registerPrices{
+        border: 1px solid transparent;
+
+        &.active{
+            border: 1px solid #2196f3;
+        }
+        &.hidden{
+            display: none;
+        }
+    }
+}
+
+.inputField{
+    position: relative;
+    margin: 24px 0 0;
+
+    label{
+        font-size: 15px;
+        font-weight: 400;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+    input{
+        margin: 5px 0 0;
+        padding: 0 16px;
+        width: 100%;
+        height: 44px;
+        color: #414141;
+        font-size: 16px;
+        border: 1px solid #eeefef;
+        box-sizing: border-box;
+        outline: none;
+
+        &:focus{
+            border: 1px solid #da7b73;
+            box-shadow: none;
+        }
+    }
+    .helper{
+        position: absolute;
+        top: 0;
+        right: 0;
+        color: #027d8c;
+        font-weight: bold;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+    }
+}
+
+.button{
+    padding: 0 30px;
+    line-height: 50px;
+    border: 0;
+    border-radius: 30px;
+    font-size: 18px;
+    letter-spacing: 1px;
+    color: #fff;
+    background: #f66056;
+    cursor: pointer;
+}
+
+.step{
+    .row{
+        margin-left: -0.75rem;
+        margin-right: -0.75rem;
+    }
+}
+
+.popup{
+    display: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 100;
+
+    &.popupActive{
+        display: block;
+    }
+    .popupClose{
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: rgba(255, 255, 255, .6);
+    }
+    .popupBlock{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        padding: 60px;
+        width: 640px;
+        height: 360px;
+        background: #fff;
+        margin: -180px 0 0 -320px;
+
+        .close{
+            display: block;
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            font-size: 30px;
+            width: 30px;
+            height: 30px;
+            line-height: 26px;
+            font-weight: 300;
+            color: #9b9b9b;
+            text-align: center;
+            cursor: pointer;
+        }
+        h2{
+            margin: 0;
+            font-size: 32px;
+            color: #3e3939;
+        }
+        p{
+            color: #7c7b7a;
+            font-size: 16px;
+            line-height: 24px;
+            margin: 12px 0 16px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1301px) and (max-width: 1500px) {
+    .authPage.authPage-restyling{
+        .authPageWrapper{
+            width: 1280px;
+        }
+    }
+}
+
+@media only screen and (min-width: 1201px) and (max-width: 1300px) {
+    .authPage.authPage-restyling{
+        .authPageWrapper{
+            width: 1024px;
+        }
+        .authPageForm{
+            margin: 0 0 0 40px;
+            width: 575px;
+
+            .authDownload{
+                .appStore, .googlePlay{
+                    margin: 20px 15px;
+                    width: 200;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1200px) {
+    .authPage.authPage-restyling{
+        .authPageWrapper{
+            width: 980px;
+        }
+        .authPageForm{
+            margin: 0 0 0 40px;
+            width: 575px;
+
+            .authDownload{
+                .appStore, .googlePlay{
+                    margin: 20px 15px;
+                    width: 200;
+                    height: 40px;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 600px) and (max-width: 1000px) {
+    .authPage.authPage-restyling{
+        overflow: hidden;
+
+        .full-height{
+            height: auto;
+        }
+        .authPageWrapper{
+            overflow: hidden;
+            margin: 10vh 0;
+            width: 100%;
+            height: auto;
+        }
+        .authPageForm{
+            margin: 0 auto;
+            width: 575px;
+        }
+    }
+}
+
+@media only screen and (max-width: 599px) {
+    .authPage.authPage-restyling{
+        overflow: hidden;
+
+        .full-height{
+            height: auto;
+        }
+        .authPageWrapper{
+            overflow: hidden;
+            margin: 5vh 0;
+            width: 100%;
+            height: auto;
+        }
+        .authPageForm{
+            margin: 0 auto;
+            width: 575px;
+
+            .greetings{
+                h1{
+                    font-size: 26px;
+
+                    span{
+                        font-size: 28px;
+                        line-height: 32px;
+                    }
+                }
+                .avatar{
+                    width: 60px;
+                    height: 60px;
+                }
+            }
+
+            .authDownload{
+                .googlePlay, .appStore{
+                    margin: 15px 0 15px 0;
+                    width: calc(50% - 47px);
+                    background-size: contain;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1024px) {
+    .authPage{
+        .authPageLeft{
+            width: 50vw;
+        }
+        .authPageRight{
+            width: 50vw;
+        }
+    }
+}
+@media only screen and (min-width: 426px) and (max-width: 768px) {
+    .authPage{
+        .authPageLeft{
+            width: 30vw;
+        }
+        .authPageRight{
+            width: 70vw;
+        }
+    }
+}
+
+@media only screen and (max-width: 425px) {
+    .authPage{
+        .authPageLeft{
+            width: 0vw;
+        }
+        .authPageRight{
+            width: 100vw;
+        }
+    }
+}

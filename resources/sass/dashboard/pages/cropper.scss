@@ -1,0 +1,25 @@
+.cropper {
+    height: 400px;
+    background: #DDD;
+}
+.croppable-init{
+    cursor: pointer;
+}
+.uploadable{
+    position: relative;
+    overflow: hidden;
+
+    input{
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        z-index: 1;
+        padding-top: 100%;
+        opacity: 0;
+        cursor: pointer;
+    }
+}

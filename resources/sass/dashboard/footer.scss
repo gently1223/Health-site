@@ -1,0 +1,117 @@
+body{
+    position: relative;
+    // padding-bottom: 226px;
+    padding-bottom: 116px;
+    padding-top: 50px;
+    min-height: 100vh;
+}
+.footer{
+    position: absolute;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    padding: 40px 0;
+    // padding: 65px 0;
+    width: 100%;
+    // height: 226px;
+    height: 116px;
+    background: #fff;
+    border-top: 1px solid #E0E3E4;
+
+    .items{
+        width: 100%;
+        overflow: hidden;
+
+        .item{
+            float: left;
+            width: 25%;
+            min-height: 140px;
+            font-size: 14px;
+            color: #777675;
+
+            h5{
+                color: #4a4545;
+                margin: 0;
+            }
+            p{
+                margin: 6px 0 0;
+                line-height: 20px;
+                font-size: 14px;
+                color: #828282;
+            }
+            & > b{
+                display: block;
+                font-size: 14px;
+                line-height: 28px;
+            }
+            & > span{
+                color: #5db083;
+            }
+            a{
+                position: relative;
+                display: inline-block;
+                margin: 0 0 10px;
+                padding-left: 28px;
+                line-height: 26px;
+                color: #467c83;
+
+                .material-icon{
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    color: #747474;
+                }
+                &:last-child{
+                    margin: 0;
+                }
+            }
+        }
+    }
+    .copyrights{
+        font-size: 12px;
+        color: #868685;
+
+        a{
+            color: #467c83;
+        }
+    }
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1366px) {
+    body{
+        // padding-bottom: 281px;
+    }
+    .footer{
+        // height: 281px;
+
+        .items{
+            .item{
+                float: right;
+                margin-bottom: 10px;
+                width: 50%;
+                min-height: auto;
+
+                &:nth-child(1){
+                    float: left;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    body{
+        // padding-bottom: 446px;
+    }
+    .footer{
+        // height: 446px;
+
+        .items{
+            .item{
+                margin-bottom: 10px;
+                width: 100%;
+                min-height: auto;
+            }
+        }
+    }
+}

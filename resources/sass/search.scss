@@ -1,0 +1,31 @@
+#search{
+  height: 60px;
+  background: #fcfcfc;
+  position: relative;
+
+  #search--input{
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 100%;
+    outline: none;
+    border: 0;
+    margin: 0;
+    line-height: 60px;
+    height: 60px;
+    padding: 0 340px 0 60px;
+    box-sizing: border-box;
+    font-size: 20px;
+    color: #3B3D45;
+    background: url('/assets/images/concierge/search.png') 18px 18px no-repeat;
+    background-size: 24px;
+    box-shadow: none;
+  }
+  a{
+    position: absolute;
+    top: 11px;
+    right: 20px;
+  }
+}

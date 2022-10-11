@@ -1,0 +1,393 @@
+.tiles{
+    width: 100%;
+    display: flex;
+    background: #f7f7f7;
+
+    .tile{
+        margin: 5px;
+        padding: 10px;
+        min-height: calc((100vw - 210px)/4);
+        background: #fff;
+        border-radius: 5px;
+        color: #273348;
+
+        .title{
+            font-size: 1.4rem;
+            line-height: 1.4rem;
+        }
+        .tile__content{
+            &.tile__content--number{
+                text-align: center;
+                height: calc((100vw - 210px)/4 - 20px - 1.4rem);
+                line-height: calc((100vw - 210px)/4 - 20px - 1.4rem);
+                font-size: 8.0rem;
+            }
+            &.tile__content--graph{
+                height: calc((100vw - 210px)/4 - 20px - 1.4rem);
+            }
+            &.tile__content--stacked{
+                height: calc((100vw - 210px)/4 - 20px - 1.4rem);
+            }
+        }
+    }
+    .tile--1{
+        width: calc(25% - 10px);
+    }
+    .tile--2{
+        width: calc(50% - 10px);
+    }
+    .tile--3{
+        width: calc(75% - 10px);
+    }
+}
+.memberDashboard{
+    hr{
+        background: none;
+        border: 0;
+        border-bottom: 1px solid #efeeef;
+        width: 100%;
+        padding: 20px 0 0;
+        margin: 0 0 20px;
+    }
+    .memberDashboard__left{
+        float: left;
+        width: 210px;
+        background: #FCFCFD;
+        border-right: 1px solid #EFEEEF;
+        min-height: calc(100vh - 50px);
+
+        .memberDashboard__avatar{
+            position: relative;
+            width: 180px;
+            height: 180px;
+            margin: 15px 15px 20px;
+            overflow: hidden;
+            border-radius: 20px;
+            background-size: cover;
+            background-position: center;
+        }
+
+        .memberDashboard__section{
+            padding: 15px 15px 20px;
+
+            .memberDashboard__title{
+                line-height: 20px;
+                font-size: 16px;
+                color: #212121;
+                text-transform: uppercase;
+            }
+            &.memberDashboard__basic{
+                ul{
+                    margin: 4px 0 0;
+                    padding: 0;
+
+                    li{
+                        margin-bottom: 10px;
+                        line-height: 26px;
+                        font-size: 16px;
+                        color: #4c4c4c;
+
+                        span{
+                            display: block;
+                            line-height: 16px;
+                            font-size: 14px;
+                            color: #4c4c4c;
+                            text-transform: uppercase;
+                        }
+                    }
+                }
+                img{
+                    width: 85%;
+                    margin: 14px auto 0;
+                }
+            }
+        }
+    }
+    .memberDashboard__right{
+        margin-left: 210px;
+
+        .memberDashboard__tabs{
+            margin: 0;
+            padding: 0;
+            background: #fff;
+            overflow: hidden;
+            border-bottom: 1px solid #efeeef;
+
+            span{
+                float: left;
+                height: 60px;
+                line-height: 60px;
+                text-align: center;
+                padding: 0 8px;
+                cursor: pointer;
+                color: #9AA0A8;
+                text-transform: uppercase;
+
+                &:first-child{
+                    border-left: 0;
+                }
+                &.active{
+                    background: #fff;
+                    color: #232323;
+                    border-left: 0;
+                }
+            }
+        }
+
+        .memberDashboard__user{
+            position: relative;
+            height: 130px;
+            padding: 0 30px;
+            border-bottom: 1px solid #efeeef;
+
+            span{
+                display: block;
+                padding: 12px 130px 0 0;
+                line-height: 50px;
+                font-size: 40px;
+                max-width: 650px;
+                font-weight:300
+            }
+            i{
+                display: block;
+                line-height: 30px;
+                font-size: 24px;
+                color: #273348;
+                font-style: normal;
+                font-weight: 200;
+                color: #273348
+            }
+            b{
+                font-size: 11px;
+                color: white;
+                background: red;
+                padding: 3px 6px;
+                text-transform: uppercase;
+                -webkit-border-radius: 2px;
+            }
+            button.right{
+                position: absolute;
+                top: 41px;
+                right: 20px;
+            }
+        }
+
+        #memberDashboard__checkins{
+            .legend{
+                ul{
+                    margin: 0;
+                    width: 100%;
+                    border-bottom: 1px solid #f3f2f3;
+                    padding: 10px 20px;
+                    height: 46px;
+
+                    li{
+                        float: left;
+                        margin-right: 20px;
+                        line-height: 26px;
+                        font-size: 16px;
+
+                        span{
+                            display: inline-block;
+                            width: 8px;
+                            height: 8px;
+                            border-radius: 50%;
+                            background: #ccc;
+                            margin: 0 4px 1px 0;
+                        }
+                    }
+                }
+            }
+            .legend{
+                height: 46px;
+                border-bottom: 1px solid #efeeef;
+
+                .dot__activity{
+                    background: #DA6213;
+                }
+                .dot__checkin{
+                    background: #148bda;
+                }
+                ul{
+                    width: auto;
+
+                    li{
+                        i{
+                            color: #9a9a9a;
+                            cursor: pointer;
+
+                            &.active{
+                                color: #353c43;
+                            }
+                        }
+                        &:last-child{
+                            margin-right: 0;
+                        }
+                    }
+                }
+            }
+            .memberDashboard__checkins{
+                overflow-x: auto;
+                overflow-y: hidden;
+
+                ul{
+                    margin: 0;
+                    padding: 0;
+                    min-width: 100%;
+                    overflow: hidden;
+                    border-bottom: 1px solid #efeeef;
+
+                    li{
+                        float: left;
+                        width: 14.2857%;
+                        height: 80px;
+                        color: #888;
+                        font-size: 14px;
+                        line-height: 24px;
+                        text-align: center;
+                        text-transform: uppercase;
+                        border-right: 1px solid #efeeef;
+                        cursor: pointer;
+
+                        &.active{
+                            background: #353C44;
+                            color: #fff;
+                        }
+                        span{
+                            display: block;
+                            font-size: 40px;
+                            line-height: 40px;
+                            padding-top: 10px;
+                        }
+                    }
+                }
+            }
+            .memberDashboardCheckinsHead{
+                text-align: left;
+                font-size: 18px;
+                font-weight: 300;
+                padding: 14px;
+                border-bottom: 1px solid #f3f2f3;
+            }
+            .memberDashboardCheckinsRow{
+                padding: 14px;
+                text-align: left;
+                font-size: 17px;
+                border-bottom: 1px solid #f3f2f3;
+            }
+            .memberDashboardEmptyCalendar{
+                padding: 15px;
+                position: relative;
+                text-align: center;
+                font-size: 1.4rem;
+                color: #888;
+            }
+            table{
+                tbody{
+                    tr{
+                        border-bottom: 0;
+                    }
+                }
+                td, th{
+                    position: relative;
+                    text-align: center;
+                    font-size: 1.4rem;
+
+                    &.today{
+                        &::after{
+                            content: '';
+                            position: absolute;
+                            top: 50%;
+                            left: 50%;
+                            width: 40px;
+                            height: 40px;
+                            margin: -20px 0 0 -20px;
+                            background: #C81A17;
+                            border-radius: 50%;
+                            z-index: -1;
+                        }
+                    }
+                    .dots{
+                        position: absolute;
+                        left: 0;
+                        right: 0;
+                        bottom: 0;
+                        height: 30px;
+                        text-align: center;
+
+                        .dot{
+                            border-radius: 50%;
+                            width: 8px;
+                            height: 8px;
+                            background: #ccc;
+                            margin: 20 3px;
+
+                            &.dot__activity{
+                                display: inline-block;
+                                background: #DA6213;
+                            }
+                            &.dot__checkin{
+                                display: inline-block;
+                                background: #148bda;
+                            }
+                            &.dot__activity ~ .dot__activity{
+                                display: none;
+                            }
+                            &.dot__checkin ~ .dot__checkin{
+                                display: none;
+                            }
+                        }
+                    }
+                    ul{
+                        display: none;
+                        position: absolute;
+                        right: 50%;
+                        bottom: 40px;
+                        padding: 10px;
+                        margin-right: -20px;
+                        background: #fff;
+                        font-size: 12px;
+                        white-space: nowrap;
+                        border: 1px solid #d0d0d0;
+                        border-radius: 5px;
+                        text-align: left;
+                        color: #000;
+                        z-index: 1;
+
+                        &:before, &:after{
+                            content: '';
+                            position: absolute;
+                            width: 0;
+                            height: 0;
+                            border-style: solid;
+                        }
+
+                        &:before{
+                            right: 13px;
+                            bottom: -6px;
+                            border-width: 6px 6px 0 6px;
+                            border-color: #ffffff transparent transparent transparent;
+                            z-index: 2;
+                        }
+                        &:after{
+                            right: 12px;
+                            bottom: -7px;
+                            border-width: 7px 7px 0 7px;
+                            border-color: #d0d0d0 transparent transparent transparent;
+                            z-index: 1;
+                        }
+                    }
+                    &:hover{
+                        ul{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+        #memberDashboard__devices{
+            padding: 25px;
+            background: #fff;
+        }
+    }
+}
